@@ -30,7 +30,7 @@
 		WHERE PRODUCT_ID = #{product_id}
 	</select>
 	
-	<insert id="insertSale" parameterType="prd">
+	<insert id="insertSale" parameterType="SaleVO">
 		INSERT INTO SALE_TBL_10
 		(SALE_SEQ, PRODUCT_ID, SALE_QTY, MEMBER_ID)
 		VALUES(
