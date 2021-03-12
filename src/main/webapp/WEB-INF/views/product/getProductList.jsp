@@ -6,6 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="./scripts/jquery-3.2.1.min.js"></script>
+<script>
+	
+</script>
+
 </head>
 <body>
 	<c:forEach var="prd" items="${list }">

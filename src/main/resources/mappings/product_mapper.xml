@@ -24,4 +24,20 @@
 		)
 		
 	</insert>
+	<select id="getProduct" parameterType="prd" resultType="map">
+		SELECT * 
+		FROM PRODUCT_TBL_10
+		WHERE PRODUCT_ID = #{product_id}
+	</select>
+	
+	<insert id="insertSale" parameterType="prd">
+		INSERT INTO SALE_TBL_10
+		(SALE_SEQ, PRODUCT_ID, SALE_QTY, MEMBER_ID)
+		VALUES(
+			#{sale_seq},
+			#{product_id},
+			#{sale_qty},
+			#{member_id}
+		)
+	</insert>
 </mapper>

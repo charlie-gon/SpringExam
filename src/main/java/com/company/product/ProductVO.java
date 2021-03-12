@@ -14,5 +14,6 @@ public class ProductVO {
 	private Date product_date;
 	private String company;
 	private String manager_id;
+	private String sale_qty;
 
 }
